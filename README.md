@@ -209,3 +209,9 @@ AI智能体通过语言模型的决策能力，执行一系列动作，以完成
 ### 总结
 
 本次课程详细介绍了AI大模型技术的四个主要领域：提示工程、AI智能体、大模型微调和预训练技术。每个领域都有其独特的应用场景和技术特点，通过深入学习这些内容，可以全面理解和掌握生成式人工智能的前沿技术和发展趋势。提示工程帮助用户与大模型进行高效互动；AI智能体提供智能化的服务和支持；大模型微调在特定任务上提升性能；预训练技术为大模型的通用能力提供基础。这些技术共同推动了生成式人工智能的发展，使其在更多领域中展现出强大的应用潜力。
+
+# Day2
+
+1. **Q1**: refer to openai_api/gpt-4v.ipynb HomeWork section
+2. **Q2**: refer to openai-translator/ai_translator use --target_language=韩文 and --target_language=日文 as run params to translate to Korean and Japanese
+3. **Q3**: refer to langchain/jupyter/chains/router_chain.ipynb HomeWork section
