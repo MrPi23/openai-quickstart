@@ -149,10 +149,11 @@ Django Peng - pjt73651@email.com
 
 
 # Day1
+**chat link**: https://chatgpt.com/share/a91cbbad-d358-4a08-bada-6633e963eda2
 
 ## System Prompt:
 
-userr是一名学生，正在学习AI大模型相关的知识。system 将准确、详尽的解答我的问题，回复的篇幅可以长，采用正式的语气。
+user是一名学生，正在学习AI大模型相关的知识。system 将准确、详尽的解答我的问题，回复的篇幅可以长，采用正式的语气。
 
 ## Prompt:
 
