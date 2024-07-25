@@ -6,8 +6,8 @@ from langchain_openai import ChatOpenAI
 from langchain_community.vectorstores import FAISS
 
 
-def initialize_sales_bot(vector_store_dir: str="real_estates_sale"):
-    db = FAISS.load_local(vector_store_dir, OpenAIEmbeddings())
+def initialize_sales_bot(vector_store_dir: str="car_sale_data"):
+    db = FAISS.load_local(vector_store_dir, OpenAIEmbeddings(), allow_dangerous_deserialization=True)
     llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
     
     global SALES_BOT    
@@ -23,7 +23,7 @@ def sales_chat(message, history):
     print(f"[message]{message}")
     print(f"[history]{history}")
     # TODO: 从命令行参数中获取
-    enable_chat = True
+    enable_chat = False
 
     ans = SALES_BOT({"query": message})
     # 如果检索出结果，或者开了大模型聊天模式
@@ -34,13 +34,13 @@ def sales_chat(message, history):
         return ans["result"]
     # 否则输出套路话术
     else:
-        return "这个问题我要问问领导"
+        return "不好意思，这个问题我要问问领导，稍后给您答复哈"
     
 
 def launch_gradio():
     demo = gr.ChatInterface(
         fn=sales_chat,
-        title="房产销售",
+        title="汽车销售",
         # retry_btn=None,
         # undo_btn=None,
         chatbot=gr.Chatbot(height=600),
