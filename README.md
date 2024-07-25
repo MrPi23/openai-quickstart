@@ -215,3 +215,6 @@ AI智能体通过语言模型的决策能力，执行一系列动作，以完成
 1. **Q1**: refer to openai_api/gpt-4v.ipynb HomeWork section
 2. **Q2**: refer to openai-translator/ai_translator use --target_language=韩文 and --target_language=日文 as run params to translate to Korean and Japanese
 3. **Q3**: refer to langchain/jupyter/chains/router_chain.ipynb HomeWork section
+
+# Day3
+**Please refer to langchain/car_sales_chatbot**
